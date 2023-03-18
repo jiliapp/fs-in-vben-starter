@@ -1,0 +1,53 @@
+/* 覆盖一些样式 */
+.fs-crud-container {
+  .ant-col {
+    width: auto;
+  }
+}
+// 修复最大化不显示表格的bug
+.vben-layout-content.full {
+  .fs-crud-container {
+    position: absolute;
+    width: 100%;
+  }
+}
+
+.fs-form-wrapper {
+  &.ant-modal {
+    .ant-modal-body {
+      padding: 24px;
+    }
+  }
+
+  .ant-modal-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+
+  .ant-modal-close-x {
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+  }
+
+  .fs-form-footer-btns {
+    margin: 20px;
+  }
+}
+
+.ant-pagination-item-ellipsis {
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+}
+
+.ant-spin-container::after {
+  width: 100%;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+  left: unset;
+  top: unset;
+}
